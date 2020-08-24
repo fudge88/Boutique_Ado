@@ -33,7 +33,7 @@ card.addEventListener('change', function (event) {
     if (event.error) {
         var html = `
             <span class="icon" role="alert">
-                <i class="fab fa-wolf-pack-battalion"></i>
+                <i class="fas fa-sync-alt"></i>
             </span>
             <span>${event.error.message}</span>
         `;
@@ -97,7 +97,7 @@ form.addEventListener('submit', function(ev) {
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
                     <span class="icon" role="alert">
-                    <i class="fab fa-wolf-pack-battalion"></i>
+                    <i class="fas fa-sync-alt"></i>
                     </span>
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
